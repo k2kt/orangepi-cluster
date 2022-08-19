@@ -1,0 +1,17 @@
+#!/bin/sh
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install libopenblas-dev expect emacs openssh-server rsh-server rsh-client xinetd nfs-common python-dev python-numpy python-matplotlib python-yaml python-h5py libgomp1 liblapacke-dev emacs24 gnuplot rlwrap gcc-4.9 g++-4.9 cpp-4.9 ruby-full samba samba-client openmpi-bin libopenmpi-dev libblas-dev liblapack-dev update-manager-core
+sudo apt-get -y dist-upgrade
+
+sudo ifconfig | more
+vi ~/Downloads/rsh/interfaces
+
+cp rsh/dot_rhosts  ~/.rhosts
+sudo cp rsh/interfaces /etc/network/
+sudo cp rsh/r* /etc/xinetd.d/
+sudo cp rsh/hosts /etc/
+sudo cp rsh/grub /etc/default/ # change to cui
+
+sudo service networking restart
+sudo ifconfig | more

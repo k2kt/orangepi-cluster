@@ -1,0 +1,4 @@
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install libopenblas-dev emacs openssh-server nfs-common libgomp1 liblapacke-dev  gnuplot gcc g++ cpp openmpi-bin libopenmpi-dev libblas-dev liblapack-dev update-manager-core
+sudo apt-get -y dist-upgrade
