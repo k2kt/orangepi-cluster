@@ -1,4 +1,3 @@
-cd ./home/orangepi
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install time arp-scan build-essential manpages-dev gfortran nfs-common nfs-kernel-server vim openmpi-bin libopenmpi-dev openmpi-doc keychain nmap libopenblas-dev emacs openssh-server nfs-common libgomp1 liblapacke-dev  gnuplot gcc g++ cpp openmpi-bin libopenmpi-dev libblas-dev liblapack-dev update-manager-core
